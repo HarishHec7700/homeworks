@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <!-- <link rel="stylesheet" href="../fonts/icofont.css"> -->
+    <link rel="stylesheet" href="../fonts/icofont.css">
     <link rel="stylesheet" href="realestate.css">
-    <script src="https://kit.fontawesome.com/b63a0cb7ce.js" cross origin="anonymous"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b63a0cb7ce.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@1,300&display=swap');
+        </style> 
+    
     <title>EstateAgency</title>
 </head>
 <body>
@@ -102,22 +107,35 @@
     <!-- LATEST PROPERTIES -->
     <section class="properties">
         <section class="container">
-            <div class="properties-flex">
+            <div class="properties-flex pad-bottom4rem">
                 <div class="properties-head"><h1>Latest Properties</h1></div>
                 <div class="properties-left-head"><a href="#" target="blank">
                  All Property ></a></div>
             </div>
             <div class="properties-image-flex">
-                <div class="properties-image"><img src="../../Source/house.jpg" width="360px" height="480px" alt="Image"></div>
-                <div class="properties-image"><img src="../../Source/house-livingroom.jpg" width="360px" height="480px" alt="Image"></div>
-                <div class="properties-image"><img src="../../Source/property-3.jpg" width="360px" height="480px" alt="Image"></div>
+                <div class="properties-image">
+                    <div class="properties-image-image">
+                        <img src="../../Source/house.jpg" width="360px" height="480px" alt="Image">
+                        <div class="properties-image-content">
+                            <h1></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="properties-image">
+                    <img src="../../Source/house-livingroom.jpg" width="360px" height="480px" alt="Image">
+                
+                </div>
+                <div class="properties-image">
+                    <img src="../../Source/property-3.jpg" width="360px" height="480px" alt="Image">
+                
+                </div>
             </div>
         </section>
     </section>
     <!-- BEST AGENTS -->
     <section class="agents pad-top8rem">
         <section class="container">
-            <div class="agents-flex">
+            <div class="agents-flex pad-bottom4rem">
                 <div class="agents-head"><h1>Best Agents</h1></div>
                 <div class="agents-left-head"><a href="#" target="blank">
                  All Agents ></a></div>
@@ -126,25 +144,67 @@
                 <div class="agents-image">
                     <div class="agents-image-image">                   
                         <img src="../../Source/professionalpics.jpg" width="360px" height="400px" alt="Image">
-                        <div class="image-content">
+                        <div class="image-agent-content">
                             <h1>
                                 <a href="#" target="_blank">Daenerys Targaryen</a>
                             </h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio saepe iusto</p>
-                            <span>Phone:</span>+715245820327<br>
-                            <span>Email:</span>agents@gmail.com
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio saepe iusto</p>
+                            <p><strong> Phone:</strong>+715245820327</p>
+                            <p><strong> Email:</strong>agents@gmail.com</p>
+                            <div class="social-links">
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></i></a></div>
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                            </div>
                         </div>    
                     </div>
                 </div>
-                <div class="agents-image"><img src="../../Source/professionalpics1.jpg" width="360px" height="400px" alt="Image"></div>
-                <div class="agents-image"><img src="../../Source/professionalpics2.jpg" width="360px" height="400px" alt="Image"></div>
+                <div class="agents-image">
+                    <div class="agents-image-image">
+                        <img src="../../Source/professionalpics1.jpg" width="360px" height="400px" alt="Image">
+                        <div class="image-agent-content">
+                            <h1>
+                                <a href="#" target="_blank">John Snow</a>
+                            </h1>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio saepe iusto</p>
+                            <p><strong> Phone:</strong>+715245820327</p>
+                            <p><strong> Email:</strong>agents@gmail.com</p>
+                            <div class="social-links">
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></i></a></div>
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="agents-image">
+                    <div class="agents-image-image">
+                        <img src="../../Source/professionalpics2.jpg" width="360px" height="400px" alt="Image">
+                        <div class="image-agent-content">
+                            <h1>
+                                <a href="#" target="_blank">Sansa Stark</a>
+                            </h1>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis distinctio saepe iusto</p>
+                            <p><strong> Phone:</strong>+715245820327</p>
+                            <p><strong> Email:</strong>agents@gmail.com</p>
+                            <div class="social-links">
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></i></a></div>
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                                <div class="social-icon"><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
             </div>
         </section>
     </section>
     <!-- LATEST NEWS -->
     <section class="news pad-top8rem">
         <section class="container">
-            <div class="news-flex">
+            <div class="news-flex pad-bottom4rem">
                 <div class="news-head"><h1>Latest News</h1></div>
                 <div class="news-left-head"><a href="#" target="blank">
                  All News ></a></div>
@@ -157,15 +217,66 @@
         </section>
     </section>
     <!-- TESTIMONIAL -->
-    <section class="testimonial">
+    <section class="testimonial pad-top8rem">
         <section class="container">
-
+            <div class="testimonial-head pad-bottom4rem">
+                <h1>Testimonial<h1></div>
+            <div class="testimonial-flex-container">
+                <div class="testimonial-image-section">
+                    <img src="../../Source/testimonial-1.jpg" alt="testimonial image" width="545px" height="378px">
+                </div>
+                <div class="testimonial-content">
+                    <div class="content-quotes">
+                        <i class="fa-solid fa-message-quote"></i></i>
+                    </div>
+                    <div class="content-para">
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet soluta culpa rem, illum quod velit atque corporis animi, debitis recusandae earum! Nisi!
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img class="testimonial-author-img" src="../../Source/testimonial-1.jpg">
+                        <h5 class="testimonial-author-name">Albert & Erika</h5>
+                    </div>
+                </div>
+            </div>
         </section>
     </section>
     <!-- ABOUT -->
     <section class="about">
         <section class="container">
-
+            <div class="about-flex">
+                <div class="about-about">
+                    <h3>Estate Agency</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, quisquam corporis veniam qui saepe reprehenderit alias aliquid ut maxime a.</p>
+                    <p>Email:<strong>contact@example.com</strong></p>
+                    <p>Phone:<strong>+54 354 157875</strong></p>
+                </div>
+                <div class="about-about">
+                    <h3>The Company</h3>
+                    <ul class="about-entities">
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#"> Site Map</li>
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#"> Legal</a></li>
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#"> Agent Admin</a></li>
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#"> Career</a></li>
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#">Afiliate</a></li>
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#"> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="about-about">
+                    <h3>International Website</h3>
+                    <ul class="about-entities">
+                        <li><i class="icofont-bubble-right"></i>
+                            <a class="about-entities-link" href="#">Venezuela</a></li>
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#"> China</a></li>
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#"> Hong Kong</a></li>
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#"> Argentina</a></li>
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#"> Singapore</a></li>
+                        <li><i class="icofont-bubble-right"></i><a class="about-entities-link" href="#"> Philippines</a></li>
+                    </ul>
+                
+                </div>
+            </div>
         </section>
     </section>
     
