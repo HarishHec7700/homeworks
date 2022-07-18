@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="../fonts/icofont.css">
-    <link rel="stylesheet" href="realestate.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b63a0cb7ce.js" crossorigin="anonymous"></script>
     <style>
@@ -33,10 +33,10 @@
                             </section>
                         </li>
                         <li>
-                            <section class="nav"><a href="#"> About</a></section>
+                            <section class="nav"><a class="active" href="#about" > About</a></section>
                         </li>
                         <li>
-                            <section class="nav"><a class="active" href="#"> Property</a></section>
+                            <section class="nav"><a class="active" href="#property"> Property</a></section>
                         </li>
                         <li>
                             <section class="nav"><a class="active" href="#"> Blog</a></section>
@@ -45,7 +45,7 @@
                             <section class="nav"><a class="active" href="#"> Pages</a></section>
                         </li>
                         <li>
-                            <section class="nav"><a class="active" href="#"> Contact</a></section>
+                            <section class="nav"><a class="active" href="#contact" > Contact</a></section>
                         </li>
                         <li>
                             <section class="nav-button">Search</section>
@@ -184,7 +184,7 @@
         </section>
     </section>
     <!-- LATEST PROPERTIES -->
-    <section class="properties">
+    <section class="properties" id="property">
         <section class="container">
             <div class="properties-flex pad-bottom4rem">
                 <div class="properties-head">
@@ -210,32 +210,95 @@
                         </p>
                     </div>
                     <div class="properties-footer">
-                        <ul >
-                            <li>
-                                <h4>Area </h4> <span>340 m<sup>2</sup></span>
-                            </li>
-                            <li>
-                                <h4>Beds </h4> <span> 2</span>
-                            </li>
-                            <li>
-                                <h4>Bath </h4> <span> 4</span>
-                            </li>
-                            <li>
-                                <h4>Garage </h4> <span>1</span>
-                            </li>
-                        </ul>
+                        <div class="properties-footer-items">
+                            <h4>Area </h4>
+                            <p>340 m<sup>2</sup></p>
+                        </div>
+                        <div class="properties-footer-items">
+                            <h4>Beds </h4>
+                            <p> 2</p>
+                        </div>
+                        <div class="properties-footer-items">
+                            <h4>Bath </h4>
+                            <p> 4</p>
+                        </div>
+                        <div class="properties-footer-items">
+                            <h4>Garage </h4>
+                            <p>1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="properties-card">
+                    <div class="properties-image">
+                        <img src="../../Source/house-livingroom.jpg" width="360px" height="480px" alt="Image">
+                    </div>
+                    <div class="properties-image-content">
+                        <h1>
+                            <a href="#" target="_blank"> 204 Montal <br>South Bela Two</a>
+                        </h1>
+                        <a href="#">
+                            <span class="properties-button">RENT | $ 12.000</span>
+                        </a>
+                        <p>
+                            Click here to view >
+                        </p>
+                    </div>
+                    <div class="properties-footer">
+                        <div class="properties-footer-items">
+                            <h4>Area </h4>
+                            <p>340 m<sup>2</sup></p>
+                        </div>
+                        <div class="properties-footer-items">
+                            <h4>Beds </h4>
+                            <p> 2</p>
+                        </div>
+                        <div class="properties-footer-items">
+                            <h4>Bath </h4>
+                            <p> 4</p>
+                        </div>
+                        <div class="properties-footer-items">
+                            <h4>Garage </h4>
+                            <p>1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="properties-card">
+                    <div class="properties-image">
+                        <img src="../../Source/property-3.jpg" width="360px" height="480px" alt="Image">
+                    </div>
+                    <div class="properties-image-content">
+                        <h1>
+                            <a href="#" target="_blank"> 206 Mount <br>Olive Road Two</a>
+                        </h1>
+                        <a href="#">
+                            <span class="properties-button">RENT | $ 12.000</span>
+                        </a>
+                        <p>
+                            Click here to view >
+                        </p>
+                    </div>
+                    <div class="properties-footer">
+                        <div class="properties-footer-items">
+                            <h4>Area </h4>
+                            <p>340 m<sup>2</sup></p>
+                        </div>
+                        <div class="properties-footer-items">
+                            <h4>Beds </h4>
+                            <p> 2</p>
+                        </div>
+                        <div class="properties-footer-items">
+                            <h4>Bath </h4>
+                            <p> 4</p>
+                        </div>
+                        <div class="properties-footer-items">
+                            <h4>Garage </h4>
+                            <p>1</p>
+                        </div>
                     </div>
                 </div>
 
-            
-                <div class="properties-image">
-                    <img src="../../Source/house-livingroom.jpg" width="360px" height="480px" alt="Image">
 
-                </div>
-                <div class="properties-image">
-                    <img src="../../Source/property-3.jpg" width="360px" height="480px" alt="Image">
-
-                </div>
+                
             </div>
         </section>
     </section>
@@ -417,7 +480,7 @@
         </section>
     </section>
     <!-- ABOUT -->
-    <section class="about">
+    <section class="about" id="about">
         <section class="container">
             <div class="about-flex">
                 <div class="about-about">
@@ -463,7 +526,7 @@
         </section>
     </section>
     <!-- FOOTER -->
-    <section class="footer">
+    <section class="footer" id="contact">
         <div class="footer-link">
             <div class="footer-nav">
                 <div class="nav-link"><a href="#"> Home</a></div>
