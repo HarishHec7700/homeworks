@@ -1,0 +1,15 @@
+.box{
+    width: 1200px;
+    background-color: antiquewhite;
+    height:  700px;
+    align-items: center;
+}
+.box-model{
+    width: 600px;
+    height: 400px;
+    margin: 25px;
+    border: 10px solid rebeccapurple;
+    padding: 30px;
+    
+}
+
