@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="filters-shadow.css">
+    <title>Filter Box Shadow Transition</title>
+</head>
+<body>
+    <!-- Box Shadow  -->
+    <div class="box">
+        <p>Hi all this is box shadow. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veritatis!</p>
+    </div>
+    <!-- Transition  -->
+    <div class="pro"><h3>Transition</h3></div>
+    <!-- transition duration -->
+    <div class="pro1">
+        <h3>Transition Duration</h3>
+        <p>Defines the duration of the transition to take place. </p>
+    </div>
+    <!-- Transition Delay -->
+    <div class="pro2">
+        <h3>Transition Delay</h3>
+        <p>It is defines the duration of delay time ,after that the transition takes place   </p>
+    </div>
+    <div class="pro2">
+        <h3>Transition Timing Function </h3>
+        <p>It is defines the duration of delay time ,after that the transition takes place   </p>
+    </div>
+    <br>
+    <br>
+    <div class="linear">constant speed</div><br>
+
+    <div class="ease">Starts slow takes pace and ends slow</div><br>
+    <div class="ease-in">Have a slow start and ends fast  </div><br>
+    <div class="ease-out">have a fst start and slow end</div><br>
+    <div class="ease-in-out"> effect take slow through</div><br>
+    <div class="cubic">cubic</div><br>
+
+    <h1>filter-properties</h1>
+
+    <ul>
+        <li>none</li>
+        <li>blur(px)</li>
+        <li>brightness(%)</li>
+        <li>contrast(%)</li>
+        <li>drop shadow(px px px color)</li>
+        <li>grayscale(%)</li>
+        <li>hue rotate(degree)</li>
+        <li>invert(%)</li>
+        <li>opacity(%)</li>
+        <li>saturate(no.)</li>
+        <li>sepia(%)</li>
+    </ul>
+    <section style="display: flex; gap:10px  ;flex-direction:row;flex-wrap: wrap;">
+        <div style="filter:none;">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: blur(5px);">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: brightness(50%);">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: contrast(80%);">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: drop-shadow(3px 3px 3px rgba(0, 183, 255, 0.507));">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: grayscale(100%);">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: hue-rotate(120deg);">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: invert(100%);">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: opacity(30%);">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: saturate(10);">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: sepia(100%);">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+        <div style="filter: brightness(200%) contrast(150%);">
+        <img src="../../Source/house.jpg" alt="hi" width="200" height="200">
+        </div>
+    </section>
+</body>
+</html>
