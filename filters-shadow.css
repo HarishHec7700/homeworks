@@ -1,0 +1,105 @@
+.box{
+    /* border: 3px #030303; */
+    box-shadow: 10px 5px 5px 7px #a09696;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+}
+.pro{
+    width: 100px;
+    height: 100px;
+    background: rgb(9, 241, 152);
+    text-align: center;
+  }
+  .pro:hover{
+    width: 300px;
+    height: 400px;
+    transition:width 2s, height 3s;
+    background:linear-gradient(rgb(9,241,152),rgb(9, 117, 241));
+  }
+  .pro1{
+    width: 300px;
+    height: 100px;
+    background: rgb(214, 9, 241);
+    text-align: center;
+  }
+  .pro1:hover{
+    width: 500px;
+    transition:width 2s;
+    background:linear-gradient(rgb(214,9,241),rgb(75, 3, 243));
+  }
+  .pro2{
+    width: 300px;
+    height: 100px;
+    background: rgb(198, 241, 9);
+    text-align: center;
+    transition-delay: 2s;
+    transition-duration: 5s;
+    transition:width 3s;
+  }
+  .pro2:hover{
+    width: 500px;
+    background:linear-gradient(rgb(198, 241, 9),rgb(241, 148, 9));
+  }
+  .linear{
+    width: 200px;
+    height: 50px;
+    background-color: lightcoral;
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+.linear:hover{
+    width: 500px;
+}
+.ease{
+    width: 200px;
+    height: 50px;
+    background-color: lightcoral;
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+.ease:hover{
+    width: 500px;
+}
+
+.ease-in{
+    width: 200px;
+    height: 50px;
+    background-color: lightcoral;
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+.ease-in:hover{
+    width: 500px;
+}
+.ease-out{
+    width: 200px;
+    height: 50px;
+    background-color: firebrick;
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+.ease-out:hover{
+    width: 500px;
+}
+
+.ease-in-out{
+    width: 200px;
+    height: 50px;
+    background-color: firebrick;
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+.ease-in-out:hover{
+    width: 500px;
+}
+.cubic{
+    width: 200px;
+    height: 50px;
+    background-color: firebrick;
+    transition: width 2s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.cubic:hover{
+    width: 500px;
+}
