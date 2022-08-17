@@ -221,26 +221,23 @@
 // }
 
 // 17. To find the prime numbers in a range 
-let n=parseInt(prompt("Enter the range to find prime numbers")),w;
-let a=0;
-for(let j=2;j<=n;j++){
+// let n=parseInt(prompt("Enter the range to find prime numbers")),w;
+// for(let j=2;j<=n;j++){
+//     let a=0;
+//     for (let i = 2; i <=j/2 ; i++) {
+//         if (j%i==0) {
+//             a=1;
+//             break;
+//         }                                     
+//     }
+//     if(a==0){
+//         console.log(j,"Is a prime number");
 
-    for (let i = 2; i <=j/2 ; i++) {
-        if (j%i==0) {
-        //     console.log(n ,"is not a prime number");
-        //     document.write(n,"is not a prime number");  
-            a=1;
-            break;
-        } 
-    }
-    if(a==0){
-        console.log(j,"Is a prime number");
+//     }else {
+//         console.log(j,"Is a not a prime number");
 
-    }else {
-        console.log(j,"Is a not a prime number");
-
-    }
-}
+//     }
+// }
 // 18. Print given N numbers in sequence
 // let n = parseInt(prompt("Enter the number to print in sequence"));
 
@@ -400,12 +397,31 @@ for(let j=2;j<=n;j++){
 
 // 30. To write a nunmber in reverse order 
 
-// let n=parseInt(prompt("Enter the nummer to be reversed")),rem;
+// let n=parseInt(prompt("Enter the number to be reversed")),rem;
 // console.log("The given number is",n);
+// document.write("The given number is ",n);
 // while(n>0){
 //     n=parseInt(n);
 //     rem=n%10;
-//     n=n/10;                              ???????
+//     n=n/10;    
+//     if(n>0)
+//     {                          
 //     console.log(rem);
+//     document.write(rem);
+//     }
 // }
+// 31. To find the given number is Armstrong or not (153= 1**3+ 5**3+ 3**3)
 
+// let num,sum=0,rem,n;
+// num=parseInt(prompt("Enter the number to find its sum of itself"));
+// n= parseInt(num);
+// for (let i =num; i >0; i=i/10) {
+//     i=parseInt(i);
+//     rem=i%10;
+//     sum=sum+rem**3;
+// }
+// console.log(sum);
+// if(sum==num)
+//     console.log("Given number is an Armstrong Number ");
+// else 
+// console.log("Given number is  not an Armstrong Number ");
