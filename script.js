@@ -425,3 +425,15 @@
 //     console.log("Given number is an Armstrong Number ");
 // else 
 // console.log("Given number is  not an Armstrong Number ");
+
+// To find a string is an palindrome or not 
+
+// let a=prompt("Enter the first string"),b="",i,j;
+// let al= a.length;
+// for (i=0;i<al/2;i++){
+//     if(a[i]==a[al-1-i])
+//         console.log("The given string is a palindrome");
+//     else
+//         console.log("The given string is not a palindrome");
+
+// }
