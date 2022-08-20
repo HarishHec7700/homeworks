@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM manipulation in Buttons -->
+    <h1>DOM manipulation in Buttons</h1>
+    <button class="click" onclick="tickle()">Tickle Me </button>
+    <h1 id="head1">HELLO WORLD </h1>
+
+    <!-- DOM manipulation in Text box -->
+    <h1> DOM manipulation in Text box</h1>
+    <form action="">
+        <label for="user-name" >User Name</label>
+        <input type="text" id="user-name" placeholder="Enter the username"><br><br>
+        <label for="user-name">Password</label>
+        <input type="password" id="password" placeholder="Password"><br><br>
+        <label for="user-name">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" oninput="passconfirm()"><br><br>
+        <p id="pass-stat"></p>
+        <button type="reset">Reset</button><button type="submit">Submit</button>
+    </form>
+    <!-- DOM manipulation in Radio button -->
+    <h1> DOM manipulation in Radio Button</h1>
+    <form action="">
+        <fieldset>
+        <legend> Radio buttons</legend>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="rd-male" value="male" > Male <br>
+        <input type="radio" name="gender" id="rd-female" value="female" > Female <br>
+        <input type="radio" name="gender" id="rd-others" value="others" > Others <br>
+
+        <button onclick="getstat()">Status Update </button>   
+        </fieldset>
+    </form>
+    <!-- DOM manipulation in Select box -->
+    <h1> DOM manipulation in Select box </h1>
+    <form action="">
+        <label for="cars">Select the company of the Car u own </label>
+        <select name="cars" id="cars"  >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Tata">Tata</option>
+            <option value="Mercedes">Mercedes</option>
+        </select>
+        <br><button onclick="uptstat()">Update me </button>
+    </form>
+    <!-- DOM manipulation in Using getElementByClassname  -->
+    <h1>DOM manipulation in Using getElementByClassname</h1>
+    <p class="manicls"> This is the First Para</p>
+    <p>This is the Secound Para</p>
+    <p class="manicls"> This is the Third Para</p>
+    <p>This is the Fourth Para</p>
+    <p class="manicls"> This is the Fifth Para</p>
+    <p>This is the Sixth Para</p>
+    <p class="manicls"> This is the Last Para</p>
+
+    <button onclick="chng()">Apply Changes</button>
+
+    <script src="domscripy.js"></script>
+</body>
+</html>
