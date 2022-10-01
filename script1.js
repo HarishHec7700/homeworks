@@ -62,26 +62,74 @@ document.getElementById("reg-btn").addEventListener("click",function(){
 // 	}
 // }
 
-let sevRnge=parseInt(prompt("Please enter the range")),sevArray=[],resArr=[],sevStr,indi=0;
-for(i=1;i<=sevRnge;i++){
+// let ae=0;
+// for(i=0;i<resArr.length;i++){
+// 	if(ae<resArr[i]){
+// 		sevArray.push(resArr[i]);
+// 	}
+// 	ae=resArr[i];
+// 	console.log(indi);
+// }
+// console.log(sevArray);
+
+// let sevRnge=parseInt(prompt("Please enter the range")),sevArray=[],resArr=[],remin=[],remin1=[],sevStr,rem=0,rem1,rema,rema1;
+// rem1=rema=rema1=0;
+// const sevRemain=(j,sevArray)=>{
+// 	while(j<0){
+// 		rem=j%10;
+// 		rem1=j/10;
+// 		if(rem1<=rem){
+// 			remin.push(sevArray[i]);
+// 		}
+// 	}
+// }
+var result = [],res=0,ab,ba;
+var answer = []
+for(i=1;i<=200;i++){
 	if(i%7==0){
 		// sevStr=i.toString();
-		resArr.push(i);
-		console.log(resArr);
+		result.push(i);
 	}
 }
 
-for(i=0;i<resArr.length;i++){
-	let arr1=resArr[i];
-	console.log(arr1);
-	arr1=arr1.toString();
-	arr1=[...arr1];
-	for(j=0;i<arr1.length;j++){
-		if(arr1[j]<arr1[j+1]){}
-		else
-			indi++;
-		if(indi==0){
-			console.log(resArr[i]);
-		}
+for(i=0;i<result.length;i++){
+	if(result[i]<100){
+    var a = result[i] % 10;
+	var b = Math.floor(result[i]/10)
+	if(b<a){
+		console.log(result[i]);
+	}
+	}else{
+	res=result[i]-100;
+	ab = res % 10;
+	ba = Math.floor(res/10)
+	if(ba<ab){
+		console.log(result[i]);
 	}	
 }
+
+}	
+// 		j=sevArray[i];
+// 		// sevRemain(j,sevArray[i]);
+// 		while(j<0){
+// 			rem=j%10;
+// 			rem1=j/10;
+// 			if(rem1<=rem){
+// 				remin.push(sevArray[i]);
+// 			}
+// 		}
+// 		console.log(remin);
+// 	}
+// 	else{
+// 		j=sevArray[i]-100;
+// 		while(j<0){
+// 			rema=j%10;
+// 			rema1=j/10;
+// 			if(rema1<=rema){
+// 				remin1.push(sevArray[i]);
+// 			}
+// 		}
+// 		console.log(remin1);
+// 	}
+
+
