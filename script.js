@@ -315,7 +315,7 @@
 //     //     break;                  xxxxxxx
 // }
 
-//  22.  To check the marriage eligubility 
+//  22.  To check the marriage eligibility 
 
 // let g,age=parseInt(prompt("Enter the age of the groom/ bride "));
 // g=parseInt(prompt("Type '1' if its groom or '0' if its bride "));
@@ -379,7 +379,6 @@
 // for (let i = 1; i <=m; i++) {
 //     console.log(n,"*",i,"=",n*i);
 //     document.write(n,"*",i,"=",n*i);
-    
 // }
 
 // 29. To find Sum of a number
@@ -435,5 +434,21 @@
 //         console.log("The given string is a palindrome");
 //     else
 //         console.log("The given string is not a palindrome");
-
 // }
+
+
+//To find a string is an palindrome or not 
+
+ let a=prompt("Enter the first string"),i,j,x=0;
+ let al= a.length;
+ for (i=0;i<al/2;i++){
+    if(a[i]==a[al-1-i]){
+		
+	}
+    else
+        x++;
+}
+if(x)
+	console.log("The given string is not a palindrome");
+ else
+	console.log("The given string is a palindrome");
