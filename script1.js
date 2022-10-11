@@ -133,3 +133,116 @@ for(i=0;i<result.length;i++){
 // 	}
 
 
+//  Array Methods 
+
+// FOR EACH
+
+let nums=[2,4,5,6],add=0,addi=0,
+sum=(n)=>{
+	for(i=0;i<n.length;i++){
+		add+=n[i];
+	}
+	console.log(add);
+};
+sum(nums);
+let marks={
+	English:78,
+	Tamil:85,
+	Maths:60,
+	Science:88,
+	Social:78,
+},total=0;
+
+Object.keys(marks).forEach((k)=>{
+	addi+=marks[k];
+	console.log(addi);		
+});
+
+// Map Function 
+// Takes a func as argument and runs the function for each value   
+
+let work=["Doctor","Driver","Engineer"];
+work.map((is)=>{
+	console.log("He is a "+is);
+})
+let professional={
+	Arun:"Techie",
+	Vishal:"Mechanic",
+	Rathore:"Doctor",
+}
+Object.entries(professional).map((ent=>{
+	[person,kaam]=ent;
+	// console.log(ent);
+	// console.log(person);
+	// console.log(kaam);
+
+	console.log(person+" is a "+kaam);
+}))
+
+// reduce,filter,find,string,every ,splice
+
+//reduce
+// Takes a func as argument and gives a single value as result  
+
+let mrk1=[84,56,84,78,69],tot=0,prev,pres,ini=0;
+console.log(mrk1.reduce((prev,pres)=>{
+	return(prev+pres);
+}));
+
+// In object
+
+// console.log(Object.keys(marks).reduce((prev,pres)=>{
+// 	console.log(marks[prev]);
+// 	return(marks[prev]+marks[pres]);
+// }));
+
+// Every Method 
+
+let mrk2=[84,56,84,78,69];res=0;
+if(mrk2.every((ev)=>{
+	if(ev>40){
+		return true;
+	}else
+		return false;
+})){
+	console.log("The given student is Pass");
+}
+
+if(Object.keys(marks).every((eve)=>{
+	if(eve>40){
+		return true;
+	}else
+		return false;
+}))
+	console.log("The given student is Pass");
+else
+	console.log("The given student is Fail");
+
+// Filter method	
+
+let mrks=[84,54,72,26,32],
+pass=(mrks.filter((ab)=>{if(ab>35){return ab}}));
+console.log("The pass marks are",pass);
+
+// object 
+
+let pass_m=[];
+pass_m=Object.keys(marks).filter((abc)=>{
+	console.log(marks[abc]);
+	if(marks[abc]>35)
+	{
+		return (marks[abc])
+	}
+});
+console.log("The passed subjects are ",pass_m);
+
+// Find Method 
+let names=["Victor","Hector","Sector","Zap","Hector"];
+console.log(names.find((ba)=>ba=="Hector"));
+console.log(names.findIndex((ba)=>ba=="Hector"));
+console.log(names.findLastIndex((ba)=>ba=="Hector"));
+console.log(names.findLast((ba)=>ba=="Hector"));
+
+// object 
+
+console.log(Object.keys(marks).find((k)=>marks[k]>80));
