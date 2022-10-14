@@ -145,18 +145,63 @@ sum=(n)=>{
 	console.log(add);
 };
 sum(nums);
-let marks={
-	English:78,
-	Tamil:85,
-	Maths:60,
-	Science:88,
-	Social:78,
-},total=0;
+let marks=[
+	{
+		id:"544545",
+		email:"harish@gmail.com",
+		psw:"harish@123",
+		name:"Harish",
+		English:78,
+		Tamil:85,
+		Maths:60,
+		Science:88,
+		Social:78,
+	
+	},
+	{
+		
+		id:"8974487",
+		email:"arun@gmail.com",
+		psw:"Arun@123",
+		name:"Arun",
+		English:90,
+		Tamil:85,
+		Maths:60,
+		Science:88,
+		Social:78,
+	
+	},
+	
+	{
+		id:"79846487",
+		name:"Jenifer",
+		email:"jenifer@gmail.com",
+		psw:"jenifer@123",
+		English:100,
+		Tamil:85,
+		Maths:60,
+		Science:88,
+		Social:78,
+	}
+	
+]
+,total=0;
 
-Object.keys(marks).forEach((k)=>{
-	addi+=marks[k];
-	console.log(addi);		
+marks.forEach((k, i)=>{
+	
+	//console.log(k["Harish"]);
+	// addi+=marks[k];
+	// for(let x in k){
+	// 	console.log(k[x]);
+	// }	
+	
 });
+marks.find(function(arr){
+	if(arr["email"] == "arun@gmail.com"){
+		console.log(arr);
+	}
+})
+
 
 // Map Function 
 // Takes a func as argument and runs the function for each value   
@@ -246,3 +291,44 @@ console.log(names.findLast((ba)=>ba=="Hector"));
 // object 
 
 console.log(Object.keys(marks).find((k)=>marks[k]>80));
+
+// Flat Method
+// Reduces the level of nested array and takes number as parameter
+let ae=[1,23,[[[45],58]],34],
+bq=ae.flat(2);
+console.log(bq);
+
+// FlatMap 
+let aee=[1,23,[45,7],[58],34],
+bqe=aee.flatMap((af)=>{return(af)});
+console.log(bqe);
+
+// values ,Reduce right ,Last Index ,includes
+
+// values
+// Used to Return an object containing the values of the array 
+let av=[54,25,98];
+bv=av.values();
+console.log(av.values());
+for(x of bv)
+	console.log(x);
+
+// LastIndex of ethod
+// Returns the Index Last value of the iteration 
+let atd=[21,2,84,5,47,2,2];
+console.log(atd.lastIndexOf(2));
+
+// includes Method 
+
+var arr=[1,5,9,8,4,3,35,45];
+if(arr.includes(9))
+	console.log("The array has the number 9");
+else
+	console.log("The array doesn't has the number 9");
+
+// Reduce Right
+arr=[[1,5],[8,4]];
+console.log(arr.reduceRight((accumulator,cval)=>{
+	return(accumulator.concat(cval));
+}));
+
