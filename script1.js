@@ -426,21 +426,54 @@ for(i=0;i<result.length;i++){
 // 		console.log("Error");
 // 	})
 
-// let arr=[1,23,34,6,44,6,77,44,6,44],count=1; var dup=[];
 // for(i=0;i<arr.length;i++){
 // 	for(j=i+1;j<arr.length;j++){
+// 		let t=dup.includes(arr[i]);
+// 		console.log(t);
 // 		if(dup.includes(arr[i])){
-		
+// 			console.log("hi");
+// 			count++;
 // 		}else{
 // 		if(arr[i]==arr[j]){
 // 			dup.push(arr[i]);
+// 			console.log(dup);
 // 			count++;
 // 			console.log(arr[i],count);
 // 		}}
 // 	}	
+// 	console.log(arr[i],count);
 // 	count=1;	
 // }
 
+// To find the count of duplicate values
+
+// let arr=[1,2,2,4,2],count=1; var dup=[],dupli={},times=0;
+// arr.forEach((val)=>{
+// 	dupli[val]=(dupli[val]||0)+1;
+// })
+// for(i in dupli){
+// 	console.log(i,dupli[i]);
+// }
+
+// let tes=5;
+// tes=(tes||0)+1;
+// console.log(tes);
+
+// let av={};
+// av.name="Harish";
+// console.log(av);
+
+// for(i=0;i<5;i++){
+// 	for(j=5;j>0;j--){
+// 		if((i==0)&&(i==5))
+// 		document.write("*");
+// 	}
+// 	//console.log("\n");
+// 	let br=document.createElement("br");
+// 	document.body.append(br);
+// }
+
+// To return true or false if there the char is present in the string by using recursion method
 
 let str=prompt("Enter the string "),char=prompt("Enter the string ");
 let check= function(a,b) {
