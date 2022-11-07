@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.work{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    background-color: blueviolet;
+    padding: 5rem;
+}
+.container h1{
+    margin-bottom: 1.5rem;
+
+}
+.login{
+    position: relative;
+}
+.login input{
+    width: 90%;
+    height: 2rem;
+    padding: 0rem 1rem;
+    background-color: transparent;
+    border: 2px solid #40D9FFFF;
+
+}
+.login label{
+    position: absolute;
+    margin: 0.5rem;
+    top: 0;
+}
+.inp:focus ~ label{
+    top: -0.6rem;
+    left: 0.5rem;
+    background: blueviolet;
+}
+#check{
+    text-align: center;
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-color:rgb(116, 105, 105) ;
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) 2px solid;
+    cursor: pointer;
+}
