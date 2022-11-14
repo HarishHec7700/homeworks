@@ -38,10 +38,10 @@ document.getElementById("reg-btn").addEventListener("click",function(){
 })
 
 
-// let sevRnge=parseInt(prompt("Please enter the range")),sevArray=[],resArr=[],sevStr,indi=0;
+// let sevRnge=parseInt(prompt("Please enter the range")),sevArray=[],resArr=[],sevspc,indi=0;
 // for(i=1;i<=sevRnge;i++){
 // 	if(i%7==0){
-// 		// sevStr=i.toString();
+// 		// sevspc=i.tospcing();
 // 		resArr.push(i);
 // 		console.log(resArr);
 // 	}
@@ -72,7 +72,7 @@ document.getElementById("reg-btn").addEventListener("click",function(){
 // }
 // console.log(sevArray);
 
-// let sevRnge=parseInt(prompt("Please enter the range")),sevArray=[],resArr=[],remin=[],remin1=[],sevStr,rem=0,rem1,rema,rema1;
+// let sevRnge=parseInt(prompt("Please enter the range")),sevArray=[],resArr=[],remin=[],remin1=[],sevspc,rem=0,rem1,rema,rema1;
 // rem1=rema=rema1=0;
 // const sevRemain=(j,sevArray)=>{
 // 	while(j<0){
@@ -83,11 +83,12 @@ document.getElementById("reg-btn").addEventListener("click",function(){
 // 		}
 // 	}
 // }
-var result = [],res=0,ab,ba;
+
+/* var result = [],res=0,ab,ba;
 var answer = []
 for(i=1;i<=200;i++){
 	if(i%7==0){
-		// sevStr=i.toString();
+		// sevspc=i.tospcing();
 		result.push(i);
 	}
 }
@@ -108,7 +109,7 @@ for(i=0;i<result.length;i++){
 	}	
 }
 
-}	
+}	 */
 // 		j=sevArray[i];
 // 		// sevRemain(j,sevArray[i]);
 // 		while(j<0){
@@ -224,7 +225,7 @@ for(i=0;i<result.length;i++){
 // 	console.log(person+" is a "+kaam);
 // }))
 
-// // reduce,filter,find,string,every ,splice
+// // reduce,filter,find,spcing,every ,splice
 
 // //reduce
 // // Takes a func as argument and gives a single value as result  
@@ -447,14 +448,16 @@ for(i=0;i<result.length;i++){
 
 // To find the count of duplicate values
 
-// let arr=[1,2,2,4,2],count=1; var dup=[],dupli={},times=0;
-// arr.forEach((val)=>{
-// 	dupli[val]=(dupli[val]||0)+1;
-// })
-// for(i in dupli){
-// 	console.log(i,dupli[i]);
-// }
-
+/*  let arr=[1,2,2,4,4,4,2],count=1; var dup=[],dupli={},times=0;
+ arr.forEach((val)=>{
+ 	dupli[val]=(dupli[val]||0)+1;
+ })
+ for(i in dupli){
+ 	console.log(i,dupli[i]);
+ }
+ */
+ 
+ 
 // let tes=5;
 // tes=(tes||0)+1;
 // console.log(tes);
@@ -473,30 +476,321 @@ for(i=0;i<result.length;i++){
 // 	document.body.append(br);
 // }
 
-// To return true or false if there the char is present in the string by using recursion method
+// To return true or false if there the char is present in the spcing by using recursion method
 
-let str=prompt("Enter the string "),char=prompt("Enter the string ");
-let check= function(a,b) {
-	if(!a=='')
-	{
-		if(a[0]==b){
-			console.log("hi");
-			console.log("true");
-		}
-		else
-		{
-			console.log("hi");
-			a=[...a];
-			a.shift();
-			a=a.toString();
-			console.log(a);
-			a=a.replace(',','');
-			check(a,b);			
+// let spc=prompt("Enter the spcing "),char=prompt("Enter the spcing ");
+// let check= function(a,b) {
+// 	if(!a=='')
+// 	{
+// 		if(a[0]==b){
+// 			console.log("hi");
+// 			console.log("true");
+// 		}
+// 		else
+// 		{
+// 			console.log("hi");
+// 			a=[...a];
+// 			a.shift();
+// 			a=a.tospcing();
+// 			console.log(a);
+// 			a=a.replace(',','');
+// 			check(a,b);			
+// 		}
+// 	}
+// 	else
+// 	{
+// 		console.log("False");
+// 	}	
+// }
+// check(spc,char);
+
+
+// To print the hollow square in star
+
+// let no=parseInt(prompt("Enter the number of times "));
+// let spac="";
+// for(i=1;i<=no;i++){
+// 	for(j=1;j<=no;j++){
+// 		if((i==1)||(i==no)||(j==1)||(j==no))
+// 			console.log(spac+="*");
+// 		else
+// 			console.log(spac+=" ");
+// 	}
+// 	console.log("\n");
+// 	// let br=document.createElement("br");
+// 	// document.body.append(br);
+// }
+
+
+// let no=parseInt(prompt("Enter the number of times "));
+// let spac="";
+// for(i=1;i<=no;i++){
+// 	for(j=1;j<=no;j++){
+// 		if((i==1)||(i==no)||(j==1)||(j==no))
+// 			document.write("* ");
+// 		else
+// 			document.write("0 ");
+// 	}
+// 	// console.log("\n");
+// 	let br=document.createElement("br");
+// 	document.body.append(br);
+// }
+
+
+// let no=parseInt(prompt("Enter the number of times "));
+// let spac="";
+// for(i=1;i<=no;i++){
+// 	for(j=1;j<=no;j++){
+// 		if((i==1)||(i==no)||(j==1)||(j==no))
+// 			document.write("* ");
+// 		else
+// 			document.write("0 ");
+// 	}
+// 	// console.log("\n");
+// 	let br=document.createElement("br");
+// 	document.body.append(br);
+// }
+
+// // To print the hollow square in star
+
+// let spc="",no;
+// no=parseInt(prompt("Enter the number of times "));
+// for(i=1;i<=no;i++){
+// 	for(j=1;j<=no;j++){
+// 		if((i==1)||(i==no)){
+// 			spc+="* ";
+// 			//console.log(spc);
+// 		}
+// 		else{
+// 			if((j==1)||(j==no)){
+// 				spc+="* ";
+// 			//console.log(spc);
+// 		}
+// 			 else{
+// 				spc+="  ";
+// 			}
+// 		}
+// 	}
+// 	spc+="\n"
+// }
+
+// console.log(spc);
+
+
+
+// To print the hollow right angle triangle in star
+
+// let spc="",no;
+// no=parseInt(prompt("Enter the number of times "));
+// for(i=1;i<=no;i++){
+// 	for(j=1;j<=i;j++){
+// 		if((i==1)||(i==no)){
+// 			spc+="* ";
+// 			//console.log(spc);
+// 		}
+// 		else{
+// 			if((j==1)||(j==i)){
+// 				spc+="* ";
+// 			//console.log(spc);
+// 		}
+// 			 else{
+// 				spc+="  ";
+// 			}
+// 		}
+// 	}
+// 	spc+="\n"
+// }
+
+// console.log(spc);
+
+// To print the hollow right angle upper triangle in star
+
+
+// let spc="",no;
+// no=parseInt(prompt("Enter the number of times "));
+// for(i=no;i>=1;i--){
+// 	for(j=1;j<=i;j++){
+// 		if(i==1||i==no){
+// 			spc+="* ";
+// 			//console.log(spc);
+// 		}
+// 		else{
+// 			if(j==1||j==i){
+// 				spc+="* ";
+// 			//console.log(spc);
+// 		}
+// 			 else{
+// 				spc+="  ";
+// 			}
+// 		}
+// 	}
+// 	spc+="\n"
+// }
+
+// console.log(spc);
+
+// let len=parseInt(prompt("Enter the length of the rectangle")),bth=parseInt(prompt("Enter the breath of the rectangle")),star="";
+// for(i=0;i<bth;i++){
+// 	for(j=0;j<len;j++)
+// 		star+="*";
+// 	star+="\n";
+// }
+// console.log(star);
+
+// To Print a equilateral Triangle 
+
+// let n=parseInt(prompt("Enter the times")),str="";
+// for(i=0;i<n;i++){
+// 	// To Print White Spaces
+// 	// point to b noted is tht the value of j should start frm i
+// 	for(j=i;j<n-1;j++){
+// 		str+=" ";
+// 	}
+// 	// To Print Stars 
+// 	for (k=0;k<(2*i-1);k++){
+// 		str+="*"
+// 	}
+// 	str+="\n";
+// }
+// console.log(str);
+
+// To Print a equilateral Triangle facing Downwards
+
+// let n=parseInt(prompt("Enter the times")),str="";
+// for(i=n;i>0;i--){
+// 	// To Print White Spaces
+// 	// point to b noted is tht the value of j should start frm i
+// 	for(j=n-1;j>=i;j--){
+// 		str+=" ";
+// 	}
+// 	// To Print Stars 
+// 	for (k=0;k<(2*i-1);k++){
+// 		str+="*"
+// 	}
+// 	str+="\n";
+// }
+// console.log(str);
+
+
+/* let num=parseInt(prompt("Enter the terms"));
+for (i=0;i<num;i++){
+	for(j=0;j<=i;j++){
+		document.write("*");
+	}
+	document.write("<br>");	
+}
+ */
+/* for(let i=1; i<=4; i++){
+		   for( let b = 1; b<=(rows-i); b++)
+		   document.write("&nbsp;");
+		   {
+			   for (let f=1; f<=i; f++)
+			   document.write("* ");
+		   }
+		   document.write("<br>")
+	   } */
+ 
+ 
+// let pat=parseInt(prompt("Enter the Number")),str="";
+// for(i=0;i<pat;i++){
+// 	for(j=pat;j>i;j--){
+// 		str+=" ";
+// 	}
+// 	for(k=0;k<2*i-1;k++){
+// 		str+="*";
+// 	}
+// 	str+="\n";	
+// }
+// for(i=pat-1;i>0;i--){
+// 	for(j=i;j<=pat-1;j++){
+// 		str+=" ";
+// 	}
+// 	for(k=2*i-1;k>0;k--){
+// 		str+="*";
+// 	}
+// 	str+="\n";	
+// }	
+	
+// console.log(str);
+let fun=(num)=>{
+	while(num<0){
+		rem=num%10;
+		quo=num/10;
+		if(quo>num){
+			return(num);
 		}
 	}
-	else
-	{
-		console.log("False");
-	}	
 }
-check(str,char);
+
+let range=200,ans=[],a=[],rem,newNum,quo;
+for(i=1;i<=range;i++){
+	if(i%9==0){
+		ans.push(i);
+	}
+}
+console.log(ans);
+for(i=0;i<ans.length;i++){
+	if(ans[i]<100){
+		while(ans[i]<0){
+			rem=ans[i]%10;
+			quo=ans[i]/10;
+			if(quo>rem){
+				a.push(ans[i]);
+			}
+		}
+	// else{
+	// 	newNum=a[i]-100;
+
+	// }
+	}
+}
+console.log(a);
+
+// let aw=parseInt(prompt("Enter the number "));
+//   let arr=[5,3,11,7,12],res=[];
+//   let len=arr.length;
+//   for(i=0;i<arr.length;i++){
+// 	if(arr[i]>aw){
+// 		res.push(arr[i]);
+// 	}
+//   }
+//   console.log(res);
+//   res=res.sort((a,b)=>(a-b));
+//   console.log(res);
+//   if(res){
+// 	arr.pop();
+// 	arr.push(-1);
+// 	console.log(arr);	
+//   }else{
+// 	console.log(res[0]);  
+//   }
+  
+  
+
+// let num = parseInt(prompt("Enter the term"));
+// let str = "";
+// // Upside pyramid
+// for (let i = 1; i <= num; i++) {
+//   // printing spaces
+//   for (let j = num; j > i; j--) {
+//     str += " ";
+//   }
+//   // printing star
+//   for (let k = 0; k < i * 2 - 1; k++) {
+//     str += "*";
+//   }
+//   str += "\n";
+// }
+// // downside pyramid
+// for (let i = 1; i <= num - 1; i++) {
+//   // printing spaces
+//   for (let j = 0; j < i; j++) {
+//     str += " ";
+//   }
+//   // printing star
+//   for (let k = (num - i) * 2 - 1; k > 0; k--) {
+//     str += "*";
+//   }
+//   str += "\n";
+// }
+// console.log(str); 
