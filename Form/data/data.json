@@ -1,0 +1,29 @@
+[{
+        "id":"456676hmm6j7",
+        "email":"bharath@gmail.com",
+        "pswrd":"bharath123",
+        "name":"Bharat Raj",
+        "position": "Js Developer",
+        "age": 25
+    },{
+        "id":"56507990n9nhth65",
+        "email":"karthi@gmail.com",
+        "pswrd":"kathi456",
+        "name":"Karthi Gausen",
+        "position": "UI Developer",
+        "age": 26
+    },{
+        "id":"657877jnydfu89t5",
+        "email":"arun@gmail.com",
+        "pswrd":"arun789",
+        "name":"Arun Kumar",
+        "position": "React Developer",
+        "age": 22
+    },{
+        "id":"43689098lkmnjghfgfvtrt",
+        "email":"jennifer@gmail.com",
+        "pswrd":"jeniMani",
+        "name":"Jennifer",
+        "position": "SQL Developer",
+        "age": 23
+    }]
