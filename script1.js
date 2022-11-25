@@ -671,47 +671,50 @@ for(i=0;i<result.length;i++){
 // }
 // console.log(str);
 
+// Down Right Angle Triangle
 
-/* let num=parseInt(prompt("Enter the terms"));
-for (i=0;i<num;i++){
-	for(j=0;j<=i;j++){
-		document.write("*");
-	}
-	document.write("<br>");	
-}
- */
-/* for(let i=1; i<=4; i++){
-		   for( let b = 1; b<=(rows-i); b++)
-		   document.write("&nbsp;");
-		   {
-			   for (let f=1; f<=i; f++)
-			   document.write("* ");
-		   }
-		   document.write("<br>")
-	   } */
- 
- 
-// let pat=parseInt(prompt("Enter the Number")),str="";
-// for(i=0;i<pat;i++){
-// 	for(j=pat;j>i;j--){
-// 		str+=" ";
+//  let num=parseInt(prompt("Enter the terms"));
+// for (i=0;i<num;i++){
+// 	for(j=0;j<=i;j++){
+// 		document.write("*");
 // 	}
-// 	for(k=0;k<2*i-1;k++){
-// 		str+="*";
-// 	}
-// 	str+="\n";	
+// 	document.write("<br>");	
 // }
-// for(i=pat-1;i>0;i--){
-// 	for(j=i;j<=pat-1;j++){
-// 		str+=" ";
-// 	}
-// 	for(k=2*i-1;k>0;k--){
-// 		str+="*";
-// 	}
-// 	str+="\n";	
-// }	
+
+// for(let i=1; i<=4; i++){
+// 		   for( let b = 1; b<=(rows-i); b++)
+// 		   document.write("&nbsp;");
+// 		   {
+// 			   for (let f=1; f<=i; f++)
+// 			   document.write("* ");
+// 		   }
+// 		   document.write("<br>")
+// 	   } 
+ 
+ 
+// Program to print Diamond pattern
+
+let pat=parseInt(prompt("Enter the Number")),str="";
+for(i=0;i<pat;i++){
+	for(j=pat;j>i;j--){
+		str+=" ";
+	}
+	for(k=0;k<2*i-1;k++){
+		str+="*";
+	}
+	str+="\n";	
+}
+for(i=pat-1;i>0;i--){
+	for(j=i;j<=pat-1;j++){
+		str+=" ";
+	}
+	for(k=2*i-1;k>0;k--){
+		str+="*";
+	}
+	str+="\n";	
+}	
 	
-// console.log(str);
+console.log(str);
 let fun=(num)=>{
 	while(num<0){
 		rem=num%10;
@@ -765,7 +768,7 @@ console.log(a);
 // 	console.log(res[0]);  
 //   }
   
-  
+// Diamond pattern  
 
 // let num = parseInt(prompt("Enter the term"));
 // let str = "";
@@ -794,3 +797,20 @@ console.log(a);
 //   str += "\n";
 // }
 // console.log(str); 
+
+// Program to find the string has vowels are not 
+
+let str1=prompt("Enter the string"),check=0,vow="AEIOUaeiou";
+str1=str1.trim();
+for(i=0;i<str1.length;i++){  // Iterating the given string 
+	for(j=0;j<vow.length;j++)  // Iterating the vow string
+	{
+		if(str1[i]==vow[j]){
+			check++;			// If any vowels present then check gets incremented
+		}
+	}
+}
+if(check)
+	console.log("The Given string has Vowel");
+else
+	console.log("The Given string has no Vowel");	
