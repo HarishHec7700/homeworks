@@ -136,6 +136,34 @@ subEle.addEventListener('click',()=>{
     }
 })
 
+let upEle=document.getElementById("update");
+upEle.addEventListener("click",(e)=>{
+    e.preventDefault();
+    let emailVal=emailEle.value,
+    pass=passEle.value;
+    console.log(emailVal,pass);
+    let updata=(a,b)=>{
+        fetch('./data/data.json',{
+            method:'Post',
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify({
+                "email":a,
+                "pswrd":b
+            })
+        })
+        .then((res)=>{
+            return res.json();
+            
+        })
+        .then((val)=>{
+            console.log(val);        })
+            
+    }   
+    updata(emailVal,pass)
+})
+
 // Using filter method
 
 // subEle.addEventListener("click",()=>{
