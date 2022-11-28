@@ -800,17 +800,17 @@ console.log(a);
 
 // Program to find the string has vowels are not 
 
-let str1=prompt("Enter the string"),check=0,vow="AEIOUaeiou";
-str1=str1.trim();
-for(i=0;i<str1.length;i++){  // Iterating the given string 
-	for(j=0;j<vow.length;j++)  // Iterating the vow string
-	{
-		if(str1[i]==vow[j]){
-			check++;			// If any vowels present then check gets incremented
-		}
-	}
-}
-if(check)
-	console.log("The Given string has Vowel");
-else
-	console.log("The Given string has no Vowel");	
+// let str1=prompt("Enter the string"),check=0,vow="AEIOUaeiou";
+// str1=str1.trim();
+// for(i=0;i<str1.length;i++){  // Iterating the given string 
+// 	for(j=0;j<vow.length;j++)  // Iterating the vow string
+// 	{
+// 		if(str1[i]==vow[j]){
+// 			check++;			// If any vowels present then check gets incremented
+// 		}
+// 	}
+// }
+// if(check)
+// 	console.log("The Given string has Vowel");
+// else
+// 	console.log("The Given string has no Vowel");	
