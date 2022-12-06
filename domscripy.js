@@ -46,3 +46,15 @@ function chng(){
     for(x=0;x<para.length;x++)
         para[x].style.color="blue";    
 }
+
+// Regular Expression 
+function evaluvate(){
+    text_inp=document.getElementById("email").value;
+    let regex=/([a-n]){5} @/;
+    if(regex.test(text_inp))
+        document.getElementById("vali_info").innerHTML="Valid Email";
+    else
+        document.getElementById("vali_info").innerHTML="Invalid Email";
+
+}
+document.getElementById("email").addEventListener("input",evaluvate);
