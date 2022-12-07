@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To do list </title>
+    <link rel="stylesheet" href="./Source/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hi All Freaks</h1>
+    <h1 class="heading">Hi All Freaks</h1>
+    <a class="heading">Hi All Freaks</a>
+    <p class="heading">Hi All Freaks</p>
     <br>
-    <button onclick="navi()">Navigate</button>
-    <script src="script.js"></script>
+
+    <section class="todo">
+        <div class="container my-4 p-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="task">
+                        <label for="">Task</label>
+                        <textarea name="" placeholder="Enter the task" id="input" cols="30" rows="10" class="inp"></textarea>
+                    <button id="submit">Submit</button>
+                    </div>
+            </div>
+                <div class="col-lg-8">
+                    <div id="display">
+                      <!-- <p></p>> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <button onclick="navi()">Navigate</button> -->
+    <script src="script1.js"></script>
 </body>
 </html>
