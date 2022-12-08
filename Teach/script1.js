@@ -57,13 +57,24 @@
 
 //    DOM
 
+function delteFun(){
+    console.log("Sucess");
+    this.parentNode.remove();
+}
+
 let headEle=document.getElementsByClassName("heading");
 headEle[2].style.display="none";
 console.log(headEle);
 
 function validate(){
+let dispEle=document.getElementById("display");
 let textEle=document.getElementById("input");
 console.log(textEle.value);
+
+let todoDisp=document.createElement("div");
+todoDisp.setAttribute("class","tododis my-4 p2");
+dispEle.appendChild(todoDisp);
+
 // create Element 
 
 let pEle=document.createElement("p");
@@ -72,8 +83,7 @@ let pEle=document.createElement("p");
 pEle.setAttribute("class","to-do");
 // Append the new element 
 
-let dispEle=document.getElementById("display");
-dispEle.appendChild(pEle);
+todoDisp.appendChild(pEle);
 
 // Editing the Creating Element
 pEle.innerText=textEle.value;
@@ -81,14 +91,27 @@ pEle.innerText=textEle.value;
 // Creating button Element 
 let editBtn=document.createElement("button");
 // Append the element to the parent 
-dispEle.appendChild(editBtn);
+todoDisp.appendChild(editBtn);
 // Editing The created Element
 editBtn.innerText="Edit"
 // Setting Attribute for the created element
 
-editBtn.setAttribute("class"," edit")
+editBtn.setAttribute("class"," edit btn btn-danger mx-4")
 
+// Creating Delete Button 
 
+let delBtn=document.createElement("button");
+delBtn.setAttribute("class","delete btn btn-warning mx-4");
+delBtn.innerText="Delete"
+todoDisp.appendChild(delBtn);
+
+// Assinging the delete function for todo 
+
+let deleteBtn=document.getElementsByClassName("delete"); 
+console.log(deleteBtn);
+for(i=0;i<deleteBtn.length;i++){
+    deleteBtn[i].addEventListener("click",delteFun);
+}
 }
 
 let textEle=document.getElementById("input"),
