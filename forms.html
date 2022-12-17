@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form>
+        <fieldset>
+            <legend>Known programming Languages</legend>
+            <input type="radio" id="html" name="fav_language">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            <input type="radio" id="angular" name="fav_language" value="Angular">
+            <label for="angular">Angular</label>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Known programming Languages</legend>
+            <input type="checkbox" id="html" name="fav_language">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+    </form>
+    <!-- checked         Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or
+    type="radio")
+    disabled        Specifies that an input field should be disabled
+    max             Specifies the maximum value for an input field
+    maxlength       Specifies the maximum number of character for an input field
+    min             Specifies the minimum value for an input field
+    pattern         Specifies a regular expression to check the input value against
+    readonly        Specifies that an input field is read only (cannot be changed)
+    required        Specifies that an input field is required (must be filled out)
+    size            Specifies the width (in characters) of an input field
+    step            Specifies the legal number intervals for an input field
+    value           Specifies the default value for an input field -->
+
+    <h2>Password field</h2>
+
+    <!-- <p>The <strong>input type="password"</strong> defines a password field:</p> -->
+
+    <form action="/action_page.php">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>COLOR
+    <form>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+      </form> 
+
+    Email
+    <form action="/action_page.php">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Submit">
+    </form>
+
+    SELECT
+    <label for="cars">Choose a car:</label>
+
+    <select name="cars" id="cars">
+        <optgroup label="Swedish">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>    
+    </select>
+
+    <form action="/action_page.php">
+        <p><label for="w3review"></label></p>
+        <textarea id="w3review" name="w3review" rows="4" cols="50">Enter any text you want</textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <form>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="file" id="favcolor" name="favcolor">
+      </form>
+</body>
+
+</html>
