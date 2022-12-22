@@ -337,10 +337,11 @@ for(i=0;i<result.length;i++){
 // CALLBACK HELL 
 // let ab=function(){
 // 	console.log("HI this is first call");
+// cd();
 // },
 // cd=function(){
 // 	console.log("HI this is Secound call");
-// 	ab(cd);
+// 	ef();
 
 // },
 // ef=function(){
@@ -353,6 +354,7 @@ for(i=0;i<result.length;i++){
 // ab(cd);
 
 // let comp = function () {
+//	    facebook fetch my data
 //     return new Promise(function (resolve, reject) {
 //         console.log("hi");
 //         reject();
@@ -381,13 +383,13 @@ for(i=0;i<result.length;i++){
 // function call3() {
 //     return new Promise(function (resolve, reject) {
 //         console.log("Call 3");
-//         reject();
+//         resolve();
 //     })
 // }
 // function call4() {
 //     return new Promise(function (resolve, reject) {
 //         console.log("Call 4");
-//         resolve();
+//         reject();
 //     })
 // }
 // call1()
@@ -694,60 +696,60 @@ for(i=0;i<result.length;i++){
  
 // Program to print Diamond pattern
 
-let pat=parseInt(prompt("Enter the Number")),str="";
-for(i=0;i<pat;i++){
-	for(j=pat;j>i;j--){
-		str+=" ";
-	}
-	for(k=0;k<2*i-1;k++){
-		str+="*";
-	}
-	str+="\n";	
-}
-for(i=pat-1;i>0;i--){
-	for(j=i;j<=pat-1;j++){
-		str+=" ";
-	}
-	for(k=2*i-1;k>0;k--){
-		str+="*";
-	}
-	str+="\n";	
-}	
+// let pat=parseInt(prompt("Enter the Number")),str="";
+// for(i=0;i<pat;i++){
+// 	for(j=pat;j>i;j--){
+// 		str+=" ";
+// 	}
+// 	for(k=0;k<2*i-1;k++){
+// 		str+="*";
+// 	}
+// 	str+="\n";	
+// }
+// for(i=pat-1;i>0;i--){
+// 	for(j=i;j<=pat-1;j++){
+// 		str+=" ";
+// 	}
+// 	for(k=2*i-1;k>0;k--){
+// 		str+="*";
+// 	}
+// 	str+="\n";	
+// }	
 	
-console.log(str);
-let fun=(num)=>{
-	while(num<0){
-		rem=num%10;
-		quo=num/10;
-		if(quo>num){
-			return(num);
-		}
-	}
-}
+// console.log(str);
+// let fun=(num)=>{
+// 	while(num<0){
+// 		rem=num%10;
+// 		quo=num/10;
+// 		if(quo>num){
+// 			return(num);
+// 		}
+// 	}
+// }
 
-let range=200,ans=[],a=[],rem,newNum,quo;
-for(i=1;i<=range;i++){
-	if(i%9==0){
-		ans.push(i);
-	}
-}
-console.log(ans);
-for(i=0;i<ans.length;i++){
-	if(ans[i]<100){
-		while(ans[i]<0){
-			rem=ans[i]%10;
-			quo=ans[i]/10;
-			if(quo>rem){
-				a.push(ans[i]);
-			}
-		}
-	// else{
-	// 	newNum=a[i]-100;
+// let range=200,ans=[],a=[],rem,newNum,quo;
+// for(i=1;i<=range;i++){
+// 	if(i%9==0){
+// 		ans.push(i);
+// 	}
+// }
+// console.log(ans);
+// for(i=0;i<ans.length;i++){
+// 	if(ans[i]<100){
+// 		while(ans[i]<0){
+// 			rem=ans[i]%10;
+// 			quo=ans[i]/10;
+// 			if(quo>rem){
+// 				a.push(ans[i]);
+// 			}
+// 		}
+// 	// else{
+// 	// 	newNum=a[i]-100;
 
-	// }
-	}
-}
-console.log(a);
+// 	// }
+// 	}
+// }
+// console.log(a);
 
 // let aw=parseInt(prompt("Enter the number "));
 //   let arr=[5,3,11,7,12],res=[];
@@ -814,3 +816,14 @@ console.log(a);
 // 	console.log("The Given string has Vowel");
 // else
 // 	console.log("The Given string has no Vowel");	
+
+// local storage usage
+
+let obje={
+	name:"harish",
+	profession:"Hacker"
+}
+localStorage.setItem("vals",obje);
+
+let ax=localStorage.getItem("vals");
+console.table(ax.vals);
