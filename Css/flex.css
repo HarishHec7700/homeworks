@@ -1,0 +1,20 @@
+.block{
+    display: block;
+    border: 5px rebeccapurple solid;
+    height: 100px;
+    width: 500px;
+    padding: auto;
+}
+.inline{
+    display: inline;
+    height: 50px;
+
+}
+.inline-block{
+    display: inline-block;
+    border: 5px rgb(194, 109, 109) solid;
+    height: 50px;
+    width: 15rem;
+    border-radius: 50px;
+    text-align: center;
+}
