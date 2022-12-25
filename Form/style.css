@@ -24,6 +24,7 @@
     width: 90%;
     height: 2rem;
     padding: 0rem 1rem;
+    margin-bottom: 1rem;
     background-color: transparent;
     border: 2px solid #40D9FFFF;
 
@@ -47,4 +48,16 @@
     color: rgb(255, 255, 255);
     border: rgb(255, 255, 255) 2px solid;
     cursor: pointer;
+}
+#display{
+    display: none;
+}
+#disp-head{
+    font-size: 1.5rem;
+}
+#list{
+    list-style: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
