@@ -143,15 +143,16 @@ upEle.addEventListener("click",(e)=>{
     pass=passEle.value;
     console.log(emailVal,pass);
     let updata=(a,b)=>{
+        let emails=a,passwrd=b;
+        let up={emails,passwrd}
         fetch('./data/data.json',{
-            method:'Post',
+            method:'POST',
             headers:{
+                "Accept":"application/json",
                 "Content-type":"application/json"
+                
             },
-            body:JSON.stringify({
-                "email":a,
-                "pswrd":b
-            })
+            body:JSON.stringify(up)
         })
         .then((res)=>{
             return res.json();
