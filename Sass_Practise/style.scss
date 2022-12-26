@@ -1,0 +1,25 @@
+$primaryCol: #2b6777;
+$secondaryCol: #c8d8e4;
+@import "font";
+@mixin flexJusCen{
+    display: flex;
+    justify-content: center;
+}
+
+.login{
+    background-color: $primaryCol;
+    height: 100vh;
+    .login-form{
+        @include flexJusCen();
+        background-color: $secondaryCol;
+        padding: 2rem 6rem;
+        .form{
+            width: 100%;
+            text-align: center;
+            .inp{
+                width: 100%;
+            }
+        }
+
+    }
+}
