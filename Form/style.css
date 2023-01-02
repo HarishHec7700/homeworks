@@ -29,16 +29,23 @@
     border: 2px solid #40D9FFFF;
 
 }
+.login input:focus {
+    visibility: visible;
+    border: 0;
+    
+}
 .login label{
     position: absolute;
     margin: 0.5rem;
     top: 0;
+    visibility: hidden;
+    background: blueviolet;
 }
-.inp:focus ~ label{
+/* .inp:focus ~ label{
     top: -0.6rem;
     left: 0.5rem;
     background: blueviolet;
-}
+} */
 #check{
     text-align: center;
     margin-top: 2rem;
