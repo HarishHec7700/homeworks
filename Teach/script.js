@@ -100,9 +100,14 @@ let cb = amutha();
 
 // 2nd method
 let priya = function () {
-    console.log("Priya");
+    var name="Priya";
+    console.log(name +"in function");
 }
-
+priya();
+console.log(name);
+// const num=[1,2];
+// num=[2,3];
+// console.log(num);
 
 // 3rd method 
 // Arrow function 
@@ -154,11 +159,46 @@ let se = typeof ([1, 2]);
 // obj.name="Haris"
 // console.log(obj);
 
-let arr=[1,4,1,5,4,8,7];
-for(i=0;i<arr.length;i++){
-    if(arr[i]==arr[i+1]){
-        console.log(arr[i]);
+// let arr=[1,4,1,5,4,8,7,5];
+// for(i=0;i<arr.length;i++){
+//     for(j=i+1;j<arr.length;j++){
+//         if(arr[i]==arr[j]){
+//             console.log(arr[i]);
+//         }
+//     }
+// }
+
+// console.log("Hi");
+
+let b=[[6,7,3,4,7],[9,7,12],[4,5,9]]
+
+for(i=0;i<b.length;i++){     // i indicates the index number of the array b 
+    // console.log(b[i]);
+    for(j=0;j<b[i].length;j++){     // j indicates the index number of the array b[i] 
+        console.log(b[i][j]);    // 5 [0] 3[1] 3[2] 
     }
 }
 
-console.log(":Hi");
+let abb=[6,7,3,4,7];
+ab1=(abb.sort((a,b)=>{return b-a}));
+console.log(ab1);
+
+
+// function to greet fo n number of  times 
+
+// let n=parseInt(prompt("Enter the Number of times to greet ")) // 5 
+let greet=(m)=>{
+    for(i=0;i<m;i++){
+        console.log("Hi ,This is "+(i+1)+ " time " );
+    }
+}
+let add=(arr)=>{
+    let sum=0;
+    for(i of arr){
+        sum+=i;  // sum=sum+i 
+    }
+    console.log(sum);
+}
+// greet(n);
+let arr=[1,3,8,21];
+add(arr);
