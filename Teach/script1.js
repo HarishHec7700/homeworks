@@ -112,6 +112,14 @@ console.log(deleteBtn);
 for(i=0;i<deleteBtn.length;i++){
     deleteBtn[i].addEventListener("click",delteFun);
 }
+
+// For reseting the textbox
+
+let reset=(textEle)=>{
+    textEle.value="";
+}
+reset(textEle)
+
 }
 
 let textEle=document.getElementById("input"),
